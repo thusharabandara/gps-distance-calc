@@ -118,3 +118,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+# Specify where all the static files at
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
+]
+# To copy all the static files to a Django folder to improve the process
+STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
