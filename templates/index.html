@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GPS Distance Calc</title>
+
+    <!-- Bootstrap plugins -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-    
+    <div class="container">
+        <h2>Calculate the distance between two GPS coordinates</h2>
+        <hr>
+        <form class="form-horizontal" action="caldistance">
+            <div class="form-group">
+                <label for="control-label location01">FIRST LOCATION ---></label><br>
+                <label class="control-label col-sm-2" for="lat1">Latitude:</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" id="lat1"
+                        placeholder="enter the latitude for first location" name="lat1">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="long1">Longitude:</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" id="long1"
+                        placeholder="enter the longitude for first location" name="long1">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="control-label location01">SECOND LOCATION ---></label><br>
+                <label class="control-label col-sm-2" for="lat2">Latitude:</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" id="lat2"
+                        placeholder="enter the latitude for second location" name="lat2">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="long2">Longitude:</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" id="long2"
+                        placeholder="enter the longitude for second location" name="long2">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">CALCULATE</button>
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
+
 </html>
