@@ -21,7 +21,7 @@
     <div class="container">
         <h2>Calculate the distance between two GPS coordinates</h2>
         <hr>
-        <form class="form-horizontal" action="caldistance">
+        <form class="form-horizontal" action="calDistance">
             <div class="form-group">
                 <label for="control-label location01">FIRST LOCATION ---></label><br>
                 <label class="control-label col-sm-2" for="lat1">Latitude:</label>
@@ -58,6 +58,11 @@
                 </div>
             </div>
         </form>
+
+        <div id="view-result">
+            <h4>Distance in Miles: {{ dist_miles }}</h4>
+            <h4>Distance in Kilometers: {{ dist_kms }}</h4>
+        </div>
     </div>
 </body>
 
