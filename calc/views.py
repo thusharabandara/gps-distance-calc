@@ -29,9 +29,9 @@ def calDistance(request):
     arc = math.acos(cos)
 
     # Distance in miles
-    dist_miles = (arc * 3960) + "miles"
+    dist_miles = (arc * 3960)
     # Distance in kilometers
-    dist_kms = arc * 6373 + "km"
+    dist_kms = arc * 6373
 
     return render(request, "index.html", {"dist_miles": dist_miles, "dist_kms": dist_kms})
 
